@@ -1,0 +1,662 @@
+{
+  "portalId": 7916834,
+  "objectType": "DEAL",
+  "objectTypeId": "0-3",
+  "objectId": 8669396367,
+  "properties": {
+    "hs_closed_amount_in_home_currency": {
+      "versions": [
+        {
+          "name": "hs_closed_amount_in_home_currency",
+          "value": "0",
+          "timestamp": 1650490447390,
+          "sourceId": "CalculatedPropertyComputer",
+          "source": "CALCULATED",
+          "sourceVid": []
+        }
+      ],
+      "value": "0",
+      "timestamp": 1650490447390,
+      "source": "CALCULATED",
+      "sourceId": "CalculatedPropertyComputer",
+      "updatedByUserId": null
+    },
+    "dealname": {
+      "versions": [
+        {
+          "name": "dealname",
+          "value": "test espinosa INBOUND ",
+          "timestamp": 1650490447390,
+          "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+          "source": "AUTOMATION_PLATFORM",
+          "sourceVid": []
+        }
+      ],
+      "value": "test espinosa INBOUND ",
+      "timestamp": 1650490447390,
+      "source": "AUTOMATION_PLATFORM",
+      "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+      "updatedByUserId": null
+    },
+    "informacion_de_productos": {
+      "versions": [
+        {
+          "name": "informacion_de_productos",
+          "value": "Protección Patrimonial",
+          "timestamp": 1650490447390,
+          "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+          "source": "AUTOMATION_PLATFORM",
+          "sourceVid": []
+        }
+      ],
+      "value": "Protección Patrimonial",
+      "timestamp": 1650490447390,
+      "source": "AUTOMATION_PLATFORM",
+      "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+      "updatedByUserId": null
+    },
+    "hs_num_associated_deal_registrations": {
+      "versions": [
+        {
+          "name": "hs_num_associated_deal_registrations",
+          "value": "0",
+          "timestamp": 1650490448404,
+          "sourceId": "RollupProperties",
+          "source": "CALCULATED",
+          "sourceVid": []
+        }
+      ],
+      "value": "0",
+      "timestamp": 1650490448404,
+      "source": "CALCULATED",
+      "sourceId": "RollupProperties",
+      "updatedByUserId": null
+    },
+    "num_associated_contacts": {
+      "versions": [
+        {
+          "name": "num_associated_contacts",
+          "value": "1",
+          "timestamp": 1650490448406,
+          "sourceId": "RollupProperties",
+          "source": "CALCULATED",
+          "sourceVid": []
+        }
+      ],
+      "value": "1",
+      "timestamp": 1650490448406,
+      "source": "CALCULATED",
+      "sourceId": "RollupProperties",
+      "updatedByUserId": null
+    },
+    "cedula": {
+      "versions": [
+        {
+          "name": "cedula",
+          "value": "1717665424",
+          "timestamp": 1650490447390,
+          "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+          "source": "AUTOMATION_PLATFORM",
+          "sourceVid": []
+        }
+      ],
+      "value": "1717665424",
+      "timestamp": 1650490447390,
+      "source": "AUTOMATION_PLATFORM",
+      "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+      "updatedByUserId": null
+    },
+    "createdate": {
+      "versions": [
+        {
+          "name": "createdate",
+          "value": "1650490447390",
+          "timestamp": 1650490447390,
+          "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+          "source": "AUTOMATION_PLATFORM",
+          "sourceVid": []
+        }
+      ],
+      "value": "1650490447390",
+      "timestamp": 1650490447390,
+      "source": "AUTOMATION_PLATFORM",
+      "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+      "updatedByUserId": null
+    },
+    "hs_is_closed": {
+      "versions": [
+        {
+          "name": "hs_is_closed",
+          "value": "false",
+          "timestamp": 1650490447390,
+          "sourceId": "CalculatedPropertyComputer",
+          "source": "CALCULATED",
+          "sourceVid": []
+        }
+      ],
+      "value": "false",
+      "timestamp": 1650490447390,
+      "source": "CALCULATED",
+      "sourceId": "CalculatedPropertyComputer",
+      "updatedByUserId": null
+    },
+    "days_to_close": {
+      "versions": [
+        {
+          "name": "days_to_close",
+          "value": "0",
+          "timestamp": 1650490447390,
+          "sourceId": "CalculatedPropertyComputer",
+          "source": "CALCULATED",
+          "sourceVid": []
+        }
+      ],
+      "value": "0",
+      "timestamp": 1650490447390,
+      "source": "CALCULATED",
+      "sourceId": "CalculatedPropertyComputer",
+      "updatedByUserId": null
+    },
+    "hs_deal_stage_probability": {
+      "versions": [
+        {
+          "name": "hs_deal_stage_probability",
+          "value": "0.200000000000000011102230246251565404236316680908203125",
+          "timestamp": 1650491333261,
+          "sourceId": "DealStageProbabilityHandler",
+          "source": "CALCULATED",
+          "sourceVid": []
+        }
+      ],
+      "value": "0.200000000000000011102230246251565404236316680908203125",
+      "timestamp": 1650491333261,
+      "source": "CALCULATED",
+      "sourceId": "DealStageProbabilityHandler",
+      "updatedByUserId": null
+    },
+    "hs_deal_stage_probability_shadow": {
+      "versions": [
+        {
+          "name": "hs_deal_stage_probability_shadow",
+          "value": "0.200000000000000011102230246251565404236316680908203125",
+          "timestamp": 1650491332499,
+          "sourceId": "CalculatedPropertyComputer",
+          "source": "CALCULATED",
+          "sourceVid": []
+        }
+      ],
+      "value": "0.200000000000000011102230246251565404236316680908203125",
+      "timestamp": 1650491332499,
+      "source": "CALCULATED",
+      "sourceId": "CalculatedPropertyComputer",
+      "updatedByUserId": null
+    },
+    "tipo_de_lead": {
+      "versions": [
+        {
+          "name": "tipo_de_lead",
+          "value": "Inbound",
+          "timestamp": 1650490447390,
+          "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+          "source": "AUTOMATION_PLATFORM",
+          "sourceVid": []
+        }
+      ],
+      "value": "Inbound",
+      "timestamp": 1650490447390,
+      "source": "AUTOMATION_PLATFORM",
+      "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+      "updatedByUserId": null
+    },
+    "hs_closed_amount": {
+      "versions": [
+        {
+          "name": "hs_closed_amount",
+          "value": "0",
+          "timestamp": 1650490447390,
+          "sourceId": "CalculatedPropertyComputer",
+          "source": "CALCULATED",
+          "sourceVid": []
+        }
+      ],
+      "value": "0",
+      "timestamp": 1650490447390,
+      "source": "CALCULATED",
+      "sourceId": "CalculatedPropertyComputer",
+      "updatedByUserId": null
+    },
+    "hubspot_owner_id": {
+      "versions": [
+        {
+          "name": "hubspot_owner_id",
+          "value": "79901007",
+          "timestamp": 1650490447390,
+          "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+          "source": "AUTOMATION_PLATFORM",
+          "sourceVid": []
+        }
+      ],
+      "value": "79901007",
+      "timestamp": 1650490447390,
+      "source": "AUTOMATION_PLATFORM",
+      "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+      "updatedByUserId": null
+    },
+    "hs_analytics_source": {
+      "versions": [
+        {
+          "name": "hs_analytics_source",
+          "value": "REFERRALS",
+          "timestamp": 1650490448105,
+          "sourceId": "deal sync triggered by vid=68551",
+          "source": "DEALS",
+          "sourceVid": []
+        }
+      ],
+      "value": "REFERRALS",
+      "timestamp": 1650490448105,
+      "source": "DEALS",
+      "sourceId": "deal sync triggered by vid=68551",
+      "updatedByUserId": null
+    },
+    "numero_de_telefono": {
+      "versions": [
+        {
+          "name": "numero_de_telefono",
+          "value": "0932123123",
+          "timestamp": 1650490447390,
+          "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+          "source": "AUTOMATION_PLATFORM",
+          "sourceVid": []
+        }
+      ],
+      "value": "0932123123",
+      "timestamp": 1650490447390,
+      "source": "AUTOMATION_PLATFORM",
+      "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+      "updatedByUserId": null
+    },
+    "hs_createdate": {
+      "versions": [
+        {
+          "name": "hs_createdate",
+          "value": "1650490447390",
+          "timestamp": 1650490447390,
+          "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+          "source": "AUTOMATION_PLATFORM",
+          "sourceVid": []
+        }
+      ],
+      "value": "1650490447390",
+      "timestamp": 1650490447390,
+      "source": "AUTOMATION_PLATFORM",
+      "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+      "updatedByUserId": null
+    },
+    "apellido_cliente": {
+      "versions": [
+        {
+          "name": "apellido_cliente",
+          "value": "espinosa",
+          "timestamp": 1650490447390,
+          "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+          "source": "AUTOMATION_PLATFORM",
+          "sourceVid": []
+        }
+      ],
+      "value": "espinosa",
+      "timestamp": 1650490447390,
+      "source": "AUTOMATION_PLATFORM",
+      "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+      "updatedByUserId": null
+    },
+    "hs_is_deal_split": {
+      "versions": [
+        {
+          "name": "hs_is_deal_split",
+          "value": "false",
+          "timestamp": 1650490447390,
+          "sourceId": "CalculatedPropertyComputer",
+          "source": "CALCULATED",
+          "sourceVid": []
+        }
+      ],
+      "value": "false",
+      "timestamp": 1650490447390,
+      "source": "CALCULATED",
+      "sourceId": "CalculatedPropertyComputer",
+      "updatedByUserId": null
+    },
+    "hs_projected_amount": {
+      "versions": [
+        {
+          "name": "hs_projected_amount",
+          "value": "",
+          "timestamp": 1650490447985,
+          "sourceId": "CalculatedPropertyComputer",
+          "source": "CALCULATED",
+          "sourceVid": []
+        }
+      ],
+      "value": "",
+      "timestamp": 1650490447985,
+      "source": "CALCULATED",
+      "sourceId": "CalculatedPropertyComputer",
+      "updatedByUserId": null
+    },
+    "hs_num_target_accounts": {
+      "versions": [
+        {
+          "name": "hs_num_target_accounts",
+          "value": "0",
+          "timestamp": 1650490448404,
+          "sourceId": "RollupProperties",
+          "source": "CALCULATED",
+          "sourceVid": []
+        }
+      ],
+      "value": "0",
+      "timestamp": 1650490448404,
+      "source": "CALCULATED",
+      "sourceId": "RollupProperties",
+      "updatedByUserId": null
+    },
+    "hs_all_owner_ids": {
+      "versions": [
+        {
+          "name": "hs_all_owner_ids",
+          "value": "79901007",
+          "timestamp": 1650490447390,
+          "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+          "source": "AUTOMATION_PLATFORM",
+          "sourceVid": []
+        }
+      ],
+      "value": "79901007",
+      "timestamp": 1650490447390,
+      "source": "AUTOMATION_PLATFORM",
+      "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+      "updatedByUserId": null
+    },
+    "hs_projected_amount_in_home_currency": {
+      "versions": [
+        {
+          "name": "hs_projected_amount_in_home_currency",
+          "value": "",
+          "timestamp": 1650490447985,
+          "sourceId": "CalculatedPropertyComputer",
+          "source": "CALCULATED",
+          "sourceVid": []
+        }
+      ],
+      "value": "",
+      "timestamp": 1650490447985,
+      "source": "CALCULATED",
+      "sourceId": "CalculatedPropertyComputer",
+      "updatedByUserId": null
+    },
+    "nombre_cliente": {
+      "versions": [
+        {
+          "name": "nombre_cliente",
+          "value": "test",
+          "timestamp": 1650490447390,
+          "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+          "source": "AUTOMATION_PLATFORM",
+          "sourceVid": []
+        }
+      ],
+      "value": "test",
+      "timestamp": 1650490447390,
+      "source": "AUTOMATION_PLATFORM",
+      "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+      "updatedByUserId": null
+    },
+    "hs_is_closed_won": {
+      "versions": [
+        {
+          "name": "hs_is_closed_won",
+          "value": "false",
+          "timestamp": 1650490447390,
+          "sourceId": "CalculatedPropertyComputer",
+          "source": "CALCULATED",
+          "sourceVid": []
+        }
+      ],
+      "value": "false",
+      "timestamp": 1650490447390,
+      "source": "CALCULATED",
+      "sourceId": "CalculatedPropertyComputer",
+      "updatedByUserId": null
+    },
+    "correo_electronico_cliente": {
+      "versions": [
+        {
+          "name": "correo_electronico_cliente",
+          "value": "test2da@dsada.com",
+          "timestamp": 1650490447390,
+          "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+          "source": "AUTOMATION_PLATFORM",
+          "sourceVid": []
+        }
+      ],
+      "value": "test2da@dsada.com",
+      "timestamp": 1650490447390,
+      "source": "AUTOMATION_PLATFORM",
+      "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+      "updatedByUserId": null
+    },
+    "hs_num_associated_active_deal_registrations": {
+      "versions": [
+        {
+          "name": "hs_num_associated_active_deal_registrations",
+          "value": "0",
+          "timestamp": 1650490448404,
+          "sourceId": "RollupProperties",
+          "source": "CALCULATED",
+          "sourceVid": []
+        }
+      ],
+      "value": "0",
+      "timestamp": 1650490448404,
+      "source": "CALCULATED",
+      "sourceId": "RollupProperties",
+      "updatedByUserId": null
+    },
+    "hs_user_ids_of_all_owners": {
+      "versions": [
+        {
+          "name": "hs_user_ids_of_all_owners",
+          "value": "24835644",
+          "timestamp": 1650490447390,
+          "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+          "source": "AUTOMATION_PLATFORM",
+          "sourceVid": []
+        }
+      ],
+      "value": "24835644",
+      "timestamp": 1650490447390,
+      "source": "AUTOMATION_PLATFORM",
+      "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+      "updatedByUserId": null
+    },
+    "pipeline": {
+      "versions": [
+        {
+          "name": "pipeline",
+          "value": "5751208",
+          "timestamp": 1650490447390,
+          "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+          "source": "AUTOMATION_PLATFORM",
+          "sourceVid": []
+        }
+      ],
+      "value": "5751208",
+      "timestamp": 1650490447390,
+      "source": "AUTOMATION_PLATFORM",
+      "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+      "updatedByUserId": null
+    },
+    "hs_lastmodifieddate": {
+      "versions": [
+        {
+          "name": "hs_lastmodifieddate",
+          "value": "1650491333261",
+          "timestamp": 1650491333261,
+          "sourceId": "DealStageProbabilityHandler",
+          "source": "CALCULATED",
+          "sourceVid": []
+        }
+      ],
+      "value": "1650491333261",
+      "timestamp": 1650491333261,
+      "source": "CALCULATED",
+      "sourceId": "DealStageProbabilityHandler",
+      "updatedByUserId": null
+    },
+    "hubspot_owner_assigneddate": {
+      "versions": [
+        {
+          "name": "hubspot_owner_assigneddate",
+          "value": "1650490447390",
+          "timestamp": 1650490447390,
+          "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+          "source": "AUTOMATION_PLATFORM",
+          "sourceVid": []
+        }
+      ],
+      "value": "1650490447390",
+      "timestamp": 1650490447390,
+      "source": "AUTOMATION_PLATFORM",
+      "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+      "updatedByUserId": null
+    },
+    "dealstage": {
+      "versions": [
+        {
+          "name": "dealstage",
+          "value": "17890462",
+          "timestamp": 1650491332499,
+          "sourceId": "userId:24835644",
+          "source": "CRM_UI",
+          "sourceVid": [],
+          "requestId": "6375afa1-3e04-4832-99d8-8b31e8959cb1",
+          "updatedByUserId": 24835644
+        }
+      ],
+      "value": "17890462",
+      "timestamp": 1650491332499,
+      "source": "CRM_UI",
+      "sourceId": "userId:24835644",
+      "updatedByUserId": 24835644
+    },
+    "hs_num_associated_deal_splits": {
+      "versions": [
+        {
+          "name": "hs_num_associated_deal_splits",
+          "value": "0",
+          "timestamp": 1650490448404,
+          "sourceId": "RollupProperties",
+          "source": "CALCULATED",
+          "sourceVid": []
+        }
+      ],
+      "value": "0",
+      "timestamp": 1650490448404,
+      "source": "CALCULATED",
+      "sourceId": "RollupProperties",
+      "updatedByUserId": null
+    },
+    "hs_object_id": {
+      "versions": [
+        {
+          "name": "hs_object_id",
+          "value": "8669396367",
+          "timestamp": 1650490447390,
+          "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+          "source": "AUTOMATION_PLATFORM",
+          "sourceVid": []
+        }
+      ],
+      "value": "8669396367",
+      "timestamp": 1650490447390,
+      "source": "AUTOMATION_PLATFORM",
+      "sourceId": "enrollmentId:264313247355;actionExecutionIndex:2",
+      "updatedByUserId": null
+    },
+    "backendrelatedproductid": {
+      "versions": [
+        {
+          "name": "backendrelatedproductid",
+          "value": "cl283eti700d509l04ipedtvn",
+          "timestamp": 1650490470515,
+          "sourceId": "Public Object Api",
+          "source": "API",
+          "sourceVid": [],
+          "requestId": "0244a1cf-6ce4-448a-8421-7729c11c3d55"
+        }
+      ],
+      "value": "cl283eti700d509l04ipedtvn",
+      "timestamp": 1650490470515,
+      "source": "API",
+      "sourceId": "Public Object Api",
+      "updatedByUserId": null
+    },
+    "hs_analytics_source_data_2": {
+      "versions": [
+        {
+          "name": "hs_analytics_source_data_2",
+          "value": "app.hubspot.com/",
+          "timestamp": 1650490448105,
+          "sourceId": "deal sync triggered by vid=68551",
+          "source": "DEALS",
+          "sourceVid": []
+        }
+      ],
+      "value": "app.hubspot.com/",
+      "timestamp": 1650490448105,
+      "source": "DEALS",
+      "sourceId": "deal sync triggered by vid=68551",
+      "updatedByUserId": null
+    },
+    "hs_analytics_source_data_1": {
+      "versions": [
+        {
+          "name": "hs_analytics_source_data_1",
+          "value": "app.hubspot.com",
+          "timestamp": 1650490448105,
+          "sourceId": "deal sync triggered by vid=68551",
+          "source": "DEALS",
+          "sourceVid": []
+        }
+      ],
+      "value": "app.hubspot.com",
+      "timestamp": 1650490448105,
+      "source": "DEALS",
+      "sourceId": "deal sync triggered by vid=68551",
+      "updatedByUserId": null
+    },
+    "hs_updated_by_user_id": {
+      "versions": [
+        {
+          "name": "hs_updated_by_user_id",
+          "value": "24835644",
+          "timestamp": 1650491332499,
+          "sourceId": "userId:24835644",
+          "source": "CRM_UI",
+          "sourceVid": [],
+          "requestId": "6375afa1-3e04-4832-99d8-8b31e8959cb1",
+          "updatedByUserId": 24835644
+        }
+      ],
+      "value": "24835644",
+      "timestamp": 1650491332499,
+      "source": "CRM_UI",
+      "sourceId": "userId:24835644",
+      "updatedByUserId": 24835644
+    }
+  },
+  "version": 7,
+  "secondaryIdentifier": null,
+  "isDeleted": false
+}
