@@ -3,6 +3,7 @@ import asyncWrapper from 'async-wrapper-express-ts';
 import nodemailer from 'nodemailer';
 import { createTransport } from 'nodemailer';
 import { Request, Response, NextFunction } from 'express';
+import axios from 'axios';
 
 /* client.transformer.ts */
 class ClientTransformer {
@@ -10,53 +11,82 @@ class ClientTransformer {
     //console.log(client, "client");
     const transformedClient = {
       cedula: client.properties.cedula.value,
-      id: client.properties.hs_object_id.value,
+      portalId: client.properties.hs_object_id.value,
       firstName: client.properties.nombre_cliente.value,
       lastName: client.properties.apellido_cliente.value,
       email: client.properties.correo_electronico_cliente.value,
     };
+
+    const propsCedula = { property: 'cedula', value: '' };
+    propsCedula.value = transformedClient.cedula;
+    //const propsPortalId = { property: 'portalId', value: '' };
+    //propsPortalId.value = transformedClient.portalId;
+    const propsFirstName = { property: 'firstName', value: '' };
+    propsFirstName.value = transformedClient.firstName;
+    const propsLastName = { property: 'lastName', value: '' };
+    propsLastName.value = transformedClient.lastName;
+    const propsEmail = { property: 'email', value: '' };
+    propsEmail.value = transformedClient.email;
+
+    const propertyClient = {
+      properties: [],
+    };
+
+    propertyClient.properties.push(propsCedula);
+    //propertyClient.properties.push(propsPortalId);
+    propertyClient.properties.push(propsFirstName);
+    propertyClient.properties.push(propsLastName);
+    propertyClient.properties.push(propsEmail);
+
     //console.log(transformedClient, 'transformed');
-    return transformedClient;
+    return propertyClient;
   };
 
   public tranformGet = (client: any) => {
-    console.log(client, 'client');
+    //console.log(client, 'client');
     const transformeredId = {
       cedula: client.properties.cedula.value,
-      id: client.properties.hs_object_id.value,
-      firstName: client.properties.nombre_cliente.value,
-      lastName: client.properties.apellido_cliente.value,
-      email: client.properties.correo_electronico_cliente.value,
-      phone: client.properties.numero_de_telefono.value,
+      id: client.vid,
+      firstName: client.properties.firstname.value,
+      lastName: client.properties.lastname.value,
+      email: client.properties.email.value,
     };
     return transformeredId;
   };
 }
 
 /* client.services.ts */
-const allData = {};
+
 class ClientService {
   private clientTransformer: ClientTransformer = new ClientTransformer();
+  //crear instancia provider
+  private clientProvider: ClientProvider = new ClientProvider();
   //Crear instancia emailService
   private clientEmail: SendEmailService = new SendEmailService();
 
   async returnClientInfo(data: any) {
     //console.log(data, "data")
     const transformedClient = this.clientTransformer.transform(data);
-    allData[transformedClient.id] = data;
+
     //mandar correo emailService.send
-    this.clientEmail.sendMail(transformedClient);
+
     return transformedClient;
   }
 
-  async getOne(id: number) {
-    const dataId = allData[id];
+  async createClient(body: any) {
+    const transformedClient = this.clientTransformer.transform(body);
+    const response = await this.clientProvider.createClient(transformedClient);
+    this.clientEmail.sendMail(response);
+    return response;
+  }
 
-    if (!id || dataId === undefined || dataId === null) {
+  async getOne(id: number) {
+    if (!id === undefined || id === null) {
       throw new Error('id not found');
     }
-    const tranformeredId = this.clientTransformer.tranformGet(dataId);
-    return tranformeredId;
+    const tranformeredId = await this.clientProvider.getOne(id);
+    const response = await this.clientTransformer.tranformGet(tranformeredId)
+    return response;
   }
 }
 
@@ -73,24 +103,27 @@ class SendEmailService {
 
   private createTransport = nodemailer.createTransport(this.config);
 
-  async sendMail(client: any) {
-    const htmlCode =
-      '<div><p>Se ha registrado el cliente:</p></b>' +
-      '<p>cliente id:' +
-      client.id +
+  async sendMail(client: any) { 
+
+    const htmlCode = '<div><p>Se ha registrado el cliente:</p></b>' +
+    '<p>Client id:' +
+      client.vid +
       '</p></b>' +
-      '<p>cedula:' +
-      client.cedula +
+      '<p>Cedula:' +
+      client.properties.cedula.value +
       '</p></b>' +
-      '<p>nombre:' +
-      client.firstName +
+      '<p>Nombre:' +
+      client.properties.firstname.value +
       '</p></b>' +
-      '<p>apellido:' +
-      client.lastName +
+      '<p>Apellido:' +
+      client.properties.lastname.value +
       '</p></b>' +
       '<p>Correo:' +
-      client.email +
-      '</p></div>';
+      client.properties.email.value +
+      '</p></div>'; 
+      //'<p>Portal id:' +
+      //${client.properties.portalId.value} +
+      //'</p></b>' +
 
     this.email.html = htmlCode;
     this.createTransport.sendMail(this.email, function (error, _info) {
@@ -117,6 +150,42 @@ class SendEmailService {
   };
 }
 
+/* Provider */
+class ClientProvider {
+  async createClient(body: any) {
+    const url = `https://api.hubspot.com/contacts/v1/contact/`;
+    const config = {
+      headers: { 'Content-Type': 'application/json' },
+      params: {
+        hapikey: 'c0522511-1883-4ed4-a14f-d97c1586f618',
+      },
+    };
+    try {
+      const response = await axios.post(url, body, config);
+      return response.data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  async getOne(dataId: number) {
+    const url = `https://api.hubapi.com/contacts/v1/contact/vid/${dataId}/profile`;
+    const config = {
+      headers: { 'Content-Type': 'application/json' },
+      params: {
+        hapikey: 'c0522511-1883-4ed4-a14f-d97c1586f618',
+      },
+    };
+    try {
+      const response = await axios.get(url, config);
+
+      return response.data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+}
+
 /* client.controller.ts */
 
 class ClientController {
@@ -126,6 +195,13 @@ class ClientController {
     const data = _req.body;
     //console.log(data, "data controller")
     const response = await this.clientService.returnClientInfo(data);
+    res.status(200).send(response);
+  };
+
+  public createClient = async (_req: Request, res: Response) => {
+    const data = _req.body;
+    //console.log(data, "data controller")
+    const response = await this.clientService.createClient(data);
     res.status(200).send(response);
   };
 
@@ -153,11 +229,7 @@ export interface Route {
 export enum Methods {
   GET = 'get',
   POST = 'post',
-  PATCH = 'patch',
   PUT = 'put',
-  DELETE = 'delete',
-  HEAD = 'head',
-  OPTIONS = 'options',
 }
 
 type RouteHandler = (
@@ -175,6 +247,13 @@ const clientRoutes: Route[] = [
     method: Methods.POST,
     middlewares: [],
     handler: clientController.postData,
+  },
+  /* API HS */
+  {
+    path: `${mainRoute}/create`,
+    method: Methods.POST,
+    middlewares: [],
+    handler: clientController.createClient,
   },
   /* GET */
   {

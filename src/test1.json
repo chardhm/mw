@@ -1,0 +1,179 @@
+{
+  "vid": 71751,
+  "canonical-vid": 71751,
+  "merged-vids": [],
+  "portal-id": 7916834,
+  "is-contact": true,
+  "properties": {
+    "zip": {
+      "value": "02139",
+      "versions": [
+        {
+          "value": "02139",
+          "source-type": "API",
+          "source-id": null,
+          "source-label": null,
+          "updated-by-user-id": null,
+          "timestamp": 1650832512200,
+          "selected": false
+        }
+      ]
+    },
+    "website": {
+      "value": "http://hubspot.com",
+      "versions": [
+        {
+          "value": "http://hubspot.com",
+          "source-type": "API",
+          "source-id": null,
+          "source-label": null,
+          "updated-by-user-id": null,
+          "timestamp": 1650832512200,
+          "selected": false
+        }
+      ]
+    },
+    "firstname": {
+      "value": "test",
+      "versions": [
+        {
+          "value": "test",
+          "source-type": "API",
+          "source-id": null,
+          "source-label": null,
+          "updated-by-user-id": null,
+          "timestamp": 1650832512200,
+          "selected": false
+        }
+      ]
+    },
+    "address": {
+      "value": "25 First Street",
+      "versions": [
+        {
+          "value": "25 First Street",
+          "source-type": "API",
+          "source-id": null,
+          "source-label": null,
+          "updated-by-user-id": null,
+          "timestamp": 1650832512200,
+          "selected": false
+        }
+      ]
+    },
+    "city": {
+      "value": "Cambridge",
+      "versions": [
+        {
+          "value": "Cambridge",
+          "source-type": "API",
+          "source-id": null,
+          "source-label": null,
+          "updated-by-user-id": null,
+          "timestamp": 1650832512200,
+          "selected": false
+        }
+      ]
+    },
+    "phone": {
+      "value": "555-122-2323",
+      "versions": [
+        {
+          "value": "555-122-2323",
+          "source-type": "API",
+          "source-id": null,
+          "source-label": null,
+          "updated-by-user-id": null,
+          "timestamp": 1650832512200,
+          "selected": false
+        }
+      ]
+    },
+    "company": {
+      "value": "HubSpot",
+      "versions": [
+        {
+          "value": "HubSpot",
+          "source-type": "API",
+          "source-id": null,
+          "source-label": null,
+          "updated-by-user-id": null,
+          "timestamp": 1650832512200,
+          "selected": false
+        }
+      ]
+    },
+    "state": {
+      "value": "MA",
+      "versions": [
+        {
+          "value": "MA",
+          "source-type": "API",
+          "source-id": null,
+          "source-label": null,
+          "updated-by-user-id": null,
+          "timestamp": 1650832512200,
+          "selected": false
+        }
+      ]
+    },
+    "email": {
+      "value": "testingapis@hubspot.com",
+      "versions": [
+        {
+          "value": "testingapis@hubspot.com",
+          "source-type": "API",
+          "source-id": null,
+          "source-label": null,
+          "updated-by-user-id": null,
+          "timestamp": 1650832512200,
+          "selected": false
+        }
+      ]
+    },
+    "lastname": {
+      "value": "testerson",
+      "versions": [
+        {
+          "value": "testerson",
+          "source-type": "API",
+          "source-id": null,
+          "source-label": null,
+          "updated-by-user-id": null,
+          "timestamp": 1650832512200,
+          "selected": false
+        }
+      ]
+    }
+  },
+  "form-submissions": [],
+  "list-memberships": [],
+  "identity-profiles": [
+    {
+      "vid": 71751,
+      "is-deleted": false,
+      "is-contact": false,
+      "pointer-vid": 0,
+      "previous-vid": 0,
+      "linked-vids": [],
+      "saved-at-timestamp": 0,
+      "deleted-changed-timestamp": 0,
+      "identities": [
+        {
+          "type": "EMAIL",
+          "value": "testingapis@hubspot.com",
+          "timestamp": 1650832512207,
+          "is-primary": true,
+          "source": "UNSPECIFIED"
+        },
+        {
+          "type": "LEAD_GUID",
+          "value": "4e8d5991-2c64-4df5-b33d-ece1662b24f5",
+          "timestamp": 1650832512324,
+          "source": "UNSPECIFIED"
+        }
+      ]
+    }
+  ],
+  "merge-audits": []
+}
